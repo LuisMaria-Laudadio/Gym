@@ -1,0 +1,53 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 100;
+  background: transparent;
+  backdrop-filter: blur(6px); /* Estética moderna */
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: #fff;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #fbbd23;
+}
+
+.buy-button {
+  background: #fbbd23;
+  color: #000;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.buy-button:hover {
+  background: #ffcf47;
+}

@@ -1,0 +1,224 @@
+.planes-section {
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+  }
+  
+  .planes-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg, #2a2a2a, #1e1e1e, #2a2a2a, #0e0e0e);
+    background-size: 400% 400%;
+    animation: gradientShift 10s ease infinite;
+    z-index: 0;
+  }
+  
+  @keyframes gradientShift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  
+.planes-content {
+    position: relative;
+    z-index: 1;
+    padding: 4rem 2rem;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .planes-header {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+    color: #fbbd23;
+  }
+  
+  
+  .planes-header {
+    font-size: 2.5rem;
+    color: #fbbd23;
+    margin-bottom: 2.5rem;
+  }
+  
+  .planes-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .plan-card {
+    background: #2a2a2a;
+    color: #f0f0f0;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    position: relative;
+  }
+  
+  .plan-new {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fbbd23;
+    color: #000;
+    font-weight: bold;
+    padding: 0.25rem 1rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+  }
+  
+  .plan-label {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    color: #ccc;
+    margin-bottom: 0.5rem;
+  }
+  
+  .plan-title {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+  }
+  
+  .plan-price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fbbd23;
+  }
+  
+  .plan-price span {
+    font-size: 1rem;
+    color: #ccc;
+  }
+  
+  .plan-benef {
+    margin: 1rem 0 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .plan-note {
+    font-size: 0.8rem;
+    color: #bbb;
+    margin-bottom: 1rem;
+  }
+  
+  .btn {
+    padding: 0.7rem 1.5rem;
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin: 1rem 0;
+    width: 100%;
+  }
+  
+  .btn.red {
+    background-color: #e00000;
+    color: #fff;
+  }
+  
+  .btn.yellow {
+    background-color: #fbbd23;
+    color: #000;
+  }
+  
+  .btn.black {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .plan-access {
+    text-align: left;
+    margin-top: 1rem;
+  }
+  
+  .badge-row {
+    display: flex;
+    gap: 0.5rem;
+    margin: 1rem 0;
+    flex-wrap: wrap;
+  }
+  
+  .badge {
+    padding: 0.3rem 0.7rem;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: #000;
+  }
+  
+  .badge.yellow {
+    background-color: #fbbd23;
+  }
+  
+  .badge.red {
+    background-color: #e00000;
+    color: #fff;
+  }
+  
+  .badge.black {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .plan-access ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .plan-access li {
+    margin: 0.5rem 0;
+    color: #ccc;
+  }
+  .planes-section {
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+  }
+  
+  .planes-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg, #2a2a2a, #1e1e1e, #2a2a2a, #0e0e0e);
+    background-size: 400% 400%;
+    animation: gradientShift 10s ease infinite;
+    z-index: 0;
+  }
+  
+  @keyframes gradientShift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .planes-content {
+    position: relative;
+    z-index: 1;
+    padding: 4rem 2rem;
+    text-align: center;
+    color: #fff;
+  }

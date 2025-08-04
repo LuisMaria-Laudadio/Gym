@@ -1,0 +1,158 @@
+.sedes-container {
+  position: relative;
+  background: linear-gradient(-45deg, #1e1e1e, #2a2a2a, #1e1e1e, #111);
+  background-size: 400% 400%;
+  animation: fondoAnimado 15s ease infinite;
+  color: #f0f0f0;
+  padding: 2rem;
+  min-height: 100vh;
+  z-index: 1;
+  overflow: hidden;
+}
+
+@keyframes fondoAnimado {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Neblina digital sutil */
+.sedes-container::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.03), transparent 70%),
+              radial-gradient(circle at 70% 70%, rgba(255,255,255,0.02), transparent 70%);
+  animation: neblina 10s ease-in-out infinite alternate;
+  z-index: 0;
+  pointer-events: none;
+}
+
+@keyframes neblina {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(10px, -10px); }
+}
+
+.sedes-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fbbd23;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.sedes-desc {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #ccc;
+  position: relative;
+  z-index: 1;
+}
+
+.sedes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.sede-card {
+  background: #2a2a2a;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  transition: transform 0.3s;
+}
+
+.sede-card:hover {
+  transform: translateY(-5px);
+}
+
+.sede-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.sede-info {
+  padding: 1rem;
+}
+
+.sede-info h2 {
+  font-size: 1.5rem;
+  color: #fbbd23;
+  margin-bottom: 0.5rem;
+}
+
+.sede-info p {
+  color: #ddd;
+  margin: 0.5rem 0;
+}
+
+.maps-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #fbbd23;
+  color: #000;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.maps-btn:hover {
+  background-color: #ffcf47;
+}
+
+/* Sección final debajo de las sedes */
+.sedes-info-final {
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: #2a2a2a;
+  border-radius: 12px;
+  text-align: center;
+  color: #eee;
+  max-width: 900px;
+  margin-inline: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.sedes-info-final h3 {
+  font-size: 1.8rem;
+  color: #fbbd23;
+  margin-bottom: 1rem;
+}
+
+.sedes-info-final p {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+.sedes-info-final h4 {
+  color: #fbbd23;
+  margin-bottom: 0.5rem;
+}
+
+.sedes-actividades {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.sedes-actividades li {
+  background-color: #1e1e1e;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  color: #f0f0f0;
+  font-weight: 600;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}

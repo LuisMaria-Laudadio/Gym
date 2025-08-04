@@ -156,3 +156,48 @@
   font-weight: 600;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
+@media (max-width: 768px) {
+  .sedes-container {
+    padding: 20px;
+  }
+
+  .sedes-title {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+
+  .sede-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .sede-img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 20px;
+  }
+
+  .sede-text h2 {
+    font-size: 1.3rem;
+  }
+
+  .sede-text p {
+    font-size: 1rem;
+  }
+}
+
+/* === Teléfonos pequeños === */
+@media (max-width: 480px) {
+  .sedes-title {
+    font-size: 1.5rem;
+  }
+
+  .sede-text h2 {
+    font-size: 1.1rem;
+  }
+
+  .sede-text p {
+    font-size: 0.95rem;
+  }
+}

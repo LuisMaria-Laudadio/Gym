@@ -1,28 +1,27 @@
+/* === NAVBAR GENERAL === */
+
 .navbar {
   position: fixed;
   top: 0;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 1rem 2rem;
   z-index: 100;
   background: transparent;
-  backdrop-filter: blur(6px); /* Estética moderna */
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .navbar ul {
   list-style: none;
   display: flex;
-  justify-content: center;
+  gap: 2rem;
   align-items: center;
-  gap: 10rem;
-  padding: 0;
   margin: 0;
-}
-
-.navbar ul li {
-  display: inline;
+  padding: 0;
+  transition: max-height 0.3s ease-in-out;
 }
 
 .navbar ul li a {
@@ -50,4 +49,148 @@
 
 .buy-button:hover {
   background: #ffcf47;
+}
+
+/* === HAMBURGER MENU === */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  margin-top: 0.5rem;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: white;
+  border-radius: 2px;
+}
+
+/* === Tablets y móviles === */
+@media (max-width: 768px) {
+  .sedes-container {
+    padding: 20px;
+  }
+
+  .sedes-title {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+
+  .sede-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .sede-img {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto 20px;
+    display: block;
+  }
+
+  .sede-text h2 {
+    font-size: 1.3rem;
+  }
+
+  .sede-text p {
+    font-size: 1rem;
+  }
+
+  /* Navbar responsive */
+  .navbar {
+    align-items: center;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 1rem 0;
+    display: none;
+    align-items: center;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  .navbar ul.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+  }
+
+  .navbar ul li a {
+    font-size: 1.1rem;
+  }
+
+  .buy-button {
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Footer responsive */
+  footer {
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* === Teléfonos pequeños === */
+@media (max-width: 480px) {
+  .sedes-title {
+    font-size: 1.5rem;
+  }
+
+  .sede-text h2 {
+    font-size: 1.1rem;
+  }
+
+  .sede-text p {
+    font-size: 0.95rem;
+  }
+
+  .sede-img {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto 20px;
+    display: block;
+  }
+
+  .navbar ul {
+    gap: 1rem;
+  }
+
+  .navbar ul li a {
+    font-size: 1rem;
+  }
+
+  .buy-button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.95rem;
+  }
+
+  footer {
+    font-size: 0.85rem;
+    padding: 1rem;
+  }
 }
